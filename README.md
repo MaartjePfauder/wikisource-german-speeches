@@ -25,8 +25,8 @@ All entries are stored in german_speeches.csv.
 
 #### 1. Inspecting the HTML
 From viewing the page source, I identified the relevant elements:
-- Speech links appear inside <div id="mw-pages"> … <li><a>…</a></li> … </div>
-- Speech text is located under <div class="mw-parser-output"><p>…</p></div>
+- Speech links appear inside '<div id="mw-pages"> … <li><a>…</a></li> … </div>'
+- Speech text is located under '<div class="mw-parser-output"><p>…</p></div>'
 
 #### 2. Scraping
 I used:
