@@ -1,4 +1,5 @@
 # wikisource-german-speeches
+
 ## German Speeches Corpus — Web Scraping Assignment
 
 ### Overview
@@ -23,46 +24,30 @@ All entries are stored in german_speeches.csv.
 ### Data Extraction Process
 
 #### 1. Inspecting the HTML
-
 From viewing the page source, I identified the relevant elements:
-
-Speech links appear inside
-
-<div id="mw-pages"> … <li><a>…</a></li> … </div>
-
-
-Speech text is located under
-
-<div class="mw-parser-output"><p>…</p></div>
+- Speech links appear inside <div id="mw-pages"> … <li><a>…</a></li> … </div>
+- Speech text is located under <div class="mw-parser-output"><p>…</p></div>
 
 #### 2. Scraping
-
 I used:
-
-requests to download pages
-
-BeautifulSoup to parse the HTML
-
-A loop to collect text from <p> tags
+- requests to download pages
+- BeautifulSoup to parse the HTML
+- A loop to collect text from <p> tags
 
 #### 3. Cleaning (using regular expressions)
 
 I applied regex to:
-
-remove citation markers such as [1] → \[\d+\]
-
-collapse whitespace → \s+
-
-Metadata such as dates and (occasionally) author names were also extracted using regex.
+- remove citation markers such as [1] → \[\d+\]
+- collapse whitespace → \s+
+- extract the dates
 
 ### File Formats
-german_speeches.csv contains one row per speech, with:
 
-text (main content column)
-metadata columns: title, date, url
+* german_speeches.csv contains one row per speech, with:
+- text (main content column)
+- metadata columns: title, date, url
 
-scrape_wikisource_german_speeches.ipynb contains all scraping, parsing, cleaning, and saving code.
-The notebook ends by writing the CSV file, as required.
+* scrape_wikisource_german_speeches.ipynb contains all scraping, parsing, cleaning, and saving code
 
 ### Terms & Conditions for Scraping
 
@@ -72,9 +57,4 @@ robots.txt disallows scraping of backend paths (e.g., /w/, search pages) but doe
 
 According to the Wikimedia Terms of Use, content may be reused as long as licensing requirements are followed (Wikisource hosts public domain and CC BY-SA material).
 
-Because I only accessed publicly available article pages, respected rate-limits, and preserved attribution (via url and title), it is reasonable to assume that this scraping activity is permitted for academic purposes.
-
-### Repository Contents
-├── README.md
-├── german_speeches.csv
-└── scrape_wikisource_german_speeches.ipynb
+Because I only accessed publicly available article pages, respected rate-limits, and preserved attribution (via url and title), I can assume that this scraping activity is permitted.
