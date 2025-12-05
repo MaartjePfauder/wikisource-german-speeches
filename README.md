@@ -14,10 +14,10 @@ The goal was to select a website, inspect its HTML structure, scrape text data u
 The corpus consists of speeches listed in the Wikisource German speeches category.
 For each speech, the dataset includes:
 
-title — the title as listed on the category page
-date — year or date extracted from the title using regex
-url — link to the original Wikisource page
-text — the cleaned speech content (main corpus column)
+* title — the title as listed on the category page
+* date — year or date extracted from the title using regex
+* url — link to the original Wikisource page
+* text — the cleaned speech content (main corpus column)
 
 All entries are stored in german_speeches.csv.
 
