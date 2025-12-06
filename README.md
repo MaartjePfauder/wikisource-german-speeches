@@ -32,7 +32,7 @@ From viewing the page source, I identified the relevant elements:
 I used:
 - requests to download pages
 - BeautifulSoup to parse the HTML
-- A loop to collect text from <p> tags
+- A loop to collect text from `<p` tags
 
 #### 3. Cleaning (using regular expressions)
 
