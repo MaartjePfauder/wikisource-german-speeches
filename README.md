@@ -43,11 +43,11 @@ I applied regex to:
 
 ### File Formats
 
-* german_speeches.csv contains one row per speech, with:
+german_speeches.csv contains one row per speech, with:
 - text (main content column)
 - metadata columns: title, date, url
 
-* scrape_wikisource_german_speeches.ipynb contains all scraping, parsing, cleaning, and saving code
+scrape_wikisource_german_speeches.ipynb contains all scraping, parsing, cleaning, and saving code
 
 ### Terms & Conditions for Scraping
 
