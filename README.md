@@ -57,4 +57,4 @@ robots.txt disallows scraping of backend paths (e.g., /w/, search pages) but doe
 
 According to the Wikimedia Terms of Use, content may be reused as long as licensing requirements are followed (Wikisource hosts public domain and CC BY-SA material).
 
-Because I only accessed publicly available article pages, respected rate-limits, and preserved attribution (via url and title), I can assume that this scraping activity is permitted.
+Because I only accessed publicly available article pages, respected rate-limits, and preserved attribution (via url and title), It is safe to assume that this scraping activity is permitted.
